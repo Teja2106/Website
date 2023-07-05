@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Leisure Computers</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/jpg" href="{% static '/img/NavLogo.jpeg' %}" class="rounded-circle">
+    <style>
+        .scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: rgb(0, 0, 0);">
+        <div class="container my-auto mx-auto">
+            <a class="navbar-brand align-items-center md-1"><img src="{% static '/img/NavLogo.jpeg' %}" class="rounded-circle"
+                    alt=" sandheld logo" style="width: 70px; height: 70px;"></a>
+            <a class="nav-link align-items-left mr-auto" href=""
+                style="color: rgb(255, 73, 73); font-size: x-large; font-weight: 600; line-height: 0.6cm;">
+                Leisure <br> Computers|
+            </a>
+            <a class="btn btn-outline-warning btn-large rounded-pill " href="{% url 'apt-booking' %}"
+                style="font-size: large; font-weight: 500; margin-left: -1px;">
+                Book Now!
+            </a>
+        </div>
+        </div>
+
+    </nav>
+    <br><a style="color: rgb(255, 73, 73);"></a><br>
+
+    {% block content %}
+    
+    {% endblock content%}
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container-fluid text-center" style="background-color:rgb(0, 0, 0);;">
+        <div class="py-5">
+          <h2 style="color: rgb(255, 73, 73);">Interested in working with Us?</h2>
+          <a href="https://forms.gle/eM8FZ7bnvSiTWsu46"  class="btn btn-outline-warning btn-lg mt-3">
+            Let's talk
+            </a>
+         </div>
+         <div class="row">
+          <div class="col-12 col-md-4 py-3">
+            <h5 class=" pb-3" style="color: rgb(255, 73, 73);">More links</h5>
+            
+            <a href="#" class="d-block" style="color: rgb(255, 241, 184);">Home</a>
+            <a href="https://forms.gle/wmccyTN6Qqimzssp6" class="d-block" style="color: rgb(255, 241, 184);">Contact Us</a>
+            <a href="https://forms.gle/X2dE8iokghQakRESA" class="d-block" style="color: rgb(255, 241, 184); padding-left: 12px;">
+              Write a suggestion!  <i class="fas fa-heart" style="color: rgb(255, 73, 73);"></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 text-justify py-3" style="color:rgb(255, 241, 184) ;">
+            <p>
+            We're not just a tech company. We're a team of people who care about your technology and know how to use it to make your life better. Follow us on social media and see us unveil the future of edge computing.
+            Join our intern program to be part of building the Technology. 
+            </p>
+          </div>
+          <div class="col-12 col-md-4 py-3">
+            <h5 class="text-info pb-3">Social</h5>
+            <a href="https://twitter.com/Leisuretech24?ref_src=twsrc%5Etfw">
+              <i class="fab fa-twitter h1 d-block" style="color: rgb(124, 238, 255);"></i>
+            </a>
+            <a href="https://www.instagram.com/leisurecomputers">
+              <i class=" fab fa-instagram h1 d-block" style="color: rgb(255, 78, 175);"></i>
+            </a>
+            <a href="youtube.com/@Leisurecomputers">
+              <i class="fas fa-play-circle h1 d-block " style="color: rgb(255, 114, 93);"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-muted py-3">
+          <p>Copyright © LeisureComputers Pvt.Ltd 2022 | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+#navlogo{
+    height: 65px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.leisurecomputers{
+    color: #FF4949;
+    font-family: "Cabin";
+    font-size: x-large;
+    font-weight: bolder;
+    margin-right: 1515px;
+    line-height: 0.6cm;
+}
